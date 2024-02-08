@@ -27,18 +27,19 @@ function password(obj) {
   }
 }
 
+// Function Calls
 console.log(
-  31,
+  32,
   password({ name: "kolimuddin", birthYear: 1999, siteName: "google" })
 );
 console.log(
-  35,
+  36,
   password({ name: "rahat", birthYear: 2002, siteName: "Facebook" })
 );
 
 console.log(
-  40,
+  41,
   password({ name: "toky", birthYear: 200, siteName: "Facebook" })
 );
 
-console.log(44, password({ name: "maisha", birthYear: 2002 }));
+console.log(45, password({ name: "maisha", birthYear: 2002 }));
