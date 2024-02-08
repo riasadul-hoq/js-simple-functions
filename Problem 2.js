@@ -2,7 +2,7 @@ function checkName(name) {
   if (typeof name === "string") {
     let lowerCaseName = name.toLowerCase();
     let lastWord = lowerCaseName.slice(-1);
-    let wordArray = ["A", "y", "i", "e", "o", "u", "w"];
+    let wordArray = ["a", "y", "i", "e", "o", "u", "w"];
 
     if (wordArray.includes(lastWord)) {
       return "Good Name";
