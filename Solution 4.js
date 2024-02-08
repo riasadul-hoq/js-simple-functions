@@ -1,4 +1,6 @@
+/* Function password() that takes an object as input */
 function password(obj) {
+  // Condition to check missing object property & birthYear length equals to 4
   if (
     obj.hasOwnProperty("name") &&
     obj.hasOwnProperty("birthYear") &&
@@ -8,31 +10,35 @@ function password(obj) {
     let name = obj.name;
     let birthYear = obj.birthYear;
     let siteName = obj.siteName;
+    // Converts site name's first letter to upper case
     let siteNameFirstLetterUpper =
       siteName.charAt(0).toUpperCase() + siteName.slice(1);
-    return (generatedPassword = siteNameFirstLetterUpper.concat(
+    // String concat method to concatenate the strings
+    let generatedPassword = siteNameFirstLetterUpper.concat(
       "#",
       name,
       "@",
       birthYear
-    ));
+    );
+    return generatedPassword;
+    // If object missing property & birthYear not equal to 4; returns error
   } else {
     return "invalid";
   }
 }
 
 console.log(
-  24,
+  31,
   password({ name: "kolimuddin", birthYear: 1999, siteName: "google" })
 );
 console.log(
-  28,
+  35,
   password({ name: "rahat", birthYear: 2002, siteName: "Facebook" })
 );
 
 console.log(
-  30,
+  40,
   password({ name: "toky", birthYear: 200, siteName: "Facebook" })
 );
 
-console.log(32, password({ name: "maisha", birthYear: 2002 }));
+console.log(44, password({ name: "maisha", birthYear: 2002 }));
